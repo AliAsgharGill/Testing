@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Users from './components/Users'
 
 function App() {
   const [data, setData] = useState("React")
@@ -13,6 +14,8 @@ function App() {
       <br />
       <img src="https://images.unsplash.com/photo-1459802071246-377c0346da93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BsYXNofGVufDB8fDB8fHww" alt="Lemon In Water" title='Lemon In Water' />
 
+    {/* Users Component */}
+      <Users />
 
     </>
   )
