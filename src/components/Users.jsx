@@ -1,5 +1,7 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useEffect, useState } from 'react'
+
 
 const Users = () => {
 
@@ -19,14 +21,16 @@ const Users = () => {
 
   return (
     <>
-      <h1>Users</h1>
-
-      {data.map((user) => (
-        <div key={user.id}>
-          <h3>{user.name}</h3>
-          <p>{user.email}</p>
-        </div>
-      ))}
+      <div>
+        <h1>Users</h1>
+        {data.map((user) => (
+          <div key={user.id}>
+            <li>{user.id}</li>
+            <h3>{user.name}</h3>
+            <p>{user.email}</p>
+          </div>
+        ))}
+      </div>
     </>
   )
 }
